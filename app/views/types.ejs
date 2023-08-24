@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+
+    <h2>Cliquez sur un type pour voir tous les Pokémon de ce type</h2>
+    <div class="typeBox_container__typesPage">
+        <% for (const type of types) { %>
+            <div class="typeBoxTypesPage typeBox_<%= type.name.toLowerCase() %>"><a class="linkTypeBox" href="/types/<%= type.id %>"><%= type.name %></a></div>
+        <% }; %>
+    </div>
+
+<%- include('partials/footer') %>

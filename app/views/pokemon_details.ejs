@@ -1,0 +1,79 @@
+<%- include('partials/header') %>
+
+<h1>Détails de <%= pokemon.nom %> </h1>
+    <div class="container_pokemon_details">
+
+        <div class="container_image">
+            <img src="/img/<%= pokemon.numero %>.png">
+        </div>
+        
+        <div class="container_details">
+            <h2>#<%= pokemon.numero %> <%= pokemon.nom %> </h2>
+
+            <h3>Types</h3>
+                <div class="typeBox_container">
+                    <% pokemonTypes.forEach((type) => { %>
+                        <div class="typeBox typeBox_<%= type.name.toLowerCase() %>"><a class="linkTypeBox" href="/types/<%= type.id %>"><%= type.name %></a></div>
+                    <% }); %>
+                </div>
+
+            <h3>Statistiques</h3>
+            <div class="container_stats">
+                <!-- test class Jérémy -->
+                <p class="container_stats__nom">PV</p>
+                <p class="container_stats__number"><%= pokemon.pv %></p>
+                <div class="container_stats__progress">
+                    <div class="myProgressBar">
+                        <div class="myBar" style="width: <%= (100*(pokemon.pv))/255 %>%;"></div>
+                    </div>
+                </div>
+
+                <p class="container_stats__nom">Attaque</p>
+                <p class="container_stats__number"><%= pokemon.attaque %></p>
+                <div class="container_stats__progress">
+                    <div class="myProgressBar">
+                        <div class="myBar" style="width: <%= (100*(pokemon.attaque))/255 %>%;"></div>
+                    </div>
+                </div>
+
+                <p class="container_stats__nom">Défense</p>
+                <p class="container_stats__number"><%= pokemon.defense %></p>
+                <div class="container_stats__progress">
+                    <div class="myProgressBar">
+                        <div class="myBar" style="width: <%= (100*(pokemon.defense))/255 %>%;"></div>
+                    </div>
+                </div>
+
+                <p class="container_stats__nom">Attaque spé</p>
+                <p class="container_stats__number"><%= pokemon.attaque_spe %></p>
+                <div class="container_stats__progress">
+                    <div class="myProgressBar">
+                        <div class="myBar" style="width: <%= (100*(pokemon.attaque_spe))/255 %>%;"></div>
+                    </div>
+                </div>
+
+                <p class="container_stats__nom">Défense spé</p>
+                <p class="container_stats__number"><%= pokemon.defense_spe %></p>
+                <div class="container_stats__progress">
+                    <div class="myProgressBar">
+                        <div class="myBar" style="width: <%= (100*(pokemon.defense_spe))/255 %>%;"></div>
+                    </div>
+                </div>
+
+                <p class="container_stats__nom">Vitesse</p>
+                <p class="container_stats__number"><%= pokemon.vitesse %></p>
+                <div class="container_stats__progress">
+                    <div class="myProgressBar">
+                        <div class="myBar" style="width: <%= (100*(pokemon.vitesse))/255 %>%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container_backtolist">
+        <a href="/" class="backtolist">Revenir à la liste</a>
+    </div>
+
+
+<%- include('partials/footer') %>

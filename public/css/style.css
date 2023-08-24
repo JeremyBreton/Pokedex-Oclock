@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body {
+    font-family: 'Bree Serif', serif;
+    background-color: #C14040;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color:white;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+header, footer {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height:5vh;
+    border-radius: 15px;
+    justify-content: space-between;
+    padding:25px;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin-top: 25px;
+    height:3vh;
+    text-align: right;
+}
+
+header a {
+    text-decoration: none;
+    color: #982C2C;
+}
+
+header nav a {
+    font-size: 1.3em;
+    padding-left: 2em;
+}
+
+p {
+    font-size: 18px;
+}
+
+.sitename{
+    text-transform: uppercase;
+    font-size:1.5em;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pokemon_box {
+    background-color: #982C2C;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:30%;
+    margin: 5px;
+}
+
+.pokemon_title {
+    color: white;
+    text-align: center;
+}
+
+.container_pokemon_details {
+    /* border:5px solid yellow; */
+    display: flex;
+    color: white;
+}
+
+.container_image {
+    /* border:3px solid blue; */
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    padding:2%;
+}
+
+.container_details {
+    /* border:5px solid green; */
+    width:66%;
+    background-color: #982C2C;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#progressBarDiv {
+    width: 100%;
+    /* background-color: grey;
+    border:5px solid white; */
+  }
+  
+  #progressBarId {
+    width: 1%;
+    height: 30px;
+    /* background-color: green;
+    border:5px solid purple; */
+  }
+
+  /* Rajouté par Jérémy */
+ .linkPokemon {
+    text-decoration: none;
+ }
+
+ .container_stats {
+    width: 100%;
+    /* background-color: turquoise;
+    border:5px solid pink; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .container_stats__nom {
+    width: 20%;
+    /* background-color: grey;
+    border:5px solid fuchsia; */
+ }
+
+ .container_stats__number {
+    width: 20%;
+    /* background-color: yellow;
+    border:5px solid blue; */
+ }
+
+ .container_stats__progress {
+    width: 50%;
+    /* background-color: darkred; */
+    /* border:5px solid darkorange; */
+ }
+
+.myProgressBar {
+    width: 100%;
+    background-color: #632B2B;
+    border-radius: 15px;
+    /* border:5px solid green; */
+  }
+
+.myBar {
+    width: 1%;
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+  }
+
+.typeBox_container {
+    /* border:5px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 75px;
+}
+
+.typeBox_container__typesPage {
+    /* border:5px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.typeBoxTypesPage {
+    /* border:5px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 24%;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.linkTypeBox {
+    text-decoration: none;
+    color:white;
+}
+
+.typeBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+    border-radius: 15px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.typeBox_plante {
+    background-color: #77CC55;
+}
+
+.typeBox_poison {
+    background-color: #AA5599;
+}
+
+.typeBox_feu {
+    background-color: #ff4422;
+}
+
+.typeBox_eau {
+    background-color: #3399ff;
+}
+
+.typeBox_vol {
+    background-color: #6699ff;
+}
+
+.typeBox_insecte {
+    background-color: #aabb22;
+}
+
+.typeBox_normal {
+    background-color: #bbaabb;
+}
+
+.typeBox_électrik {
+    background-color: #ffbb33;
+}
+
+.typeBox_sol {
+    background-color: #ddbb55;
+}
+
+.typeBox_combat {
+    background-color: #bb5544;
+}
+
+.typeBox_psy {
+    background-color: #ff5599;
+}
+
+.typeBox_roche {
+    background-color: #bbaa66;
+}
+
+.typeBox_acier {
+    background-color: #aaaabb;
+}
+
+.typeBox_glace {
+    background-color: #77ddff;
+}
+
+.typeBox_spectre {
+    background-color: #6666bb;
+}
+
+.typeBox_dragon {
+    background-color: #7766ee;
+}
+
+.typeBox_ténèbres {
+    background-color: #665544;
+}
+
+.container_backtolist {
+    width: 100%;
+    /* background-color: turquoise;
+    border:5px solid pink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+
+}
+
+.backtolist {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
